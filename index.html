@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>summer sale products</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="Images/Summer 1.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
 
 </head>
 
-<body>
+<body id="color">
 
-    <header>
+    <header id="remove-element">
         <section class="w-full mx-auto bg-[#F9F6E2] p-14">
             <div class="md:flex items-center justify-center">
                 <div class="mr-12">
@@ -35,7 +39,7 @@
         </section>
     </header>
     <main>
-        <section>
+        <section id="remove-element2">
             <div class="max-w-full mx-auto grid grid-cols-1 lg:grid-cols-5 gap-5 px-20 bg-slate-50 cursor-pointer">
                 <div class="col-span-4">
                     <!-- start Kitchenware  -->
@@ -231,13 +235,27 @@
                                 Total: $<span id="total"></span>
                             </p>
                             <hr class="my-4" />
-                            <button class="btn btn-wide bg-[#F11A7B] text-white">
+                            <button onclick="purchase()" class="btn btn-wide bg-[#F11A7B] text-white">
                                 Make Purchase
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="congratulations" class="hidden m-auto w-full h-[500px]">
+            <div>
+                <div class="card w-96 bg-primary text-primary-content m-auto">
+                    <div class="card-body">
+                        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                            class="w-full rounded-lg shadow-2xl" />
+                        <div>
+                            <h2 class="card-title">congratulations</h2>
+                            <p>thanks for your Purchase</p>
+
+                        </div>
+                    </div>
+                </div>
         </section>
     </main>
 

@@ -46,12 +46,24 @@ const btn =document.getElementById('apply-btn');
      const allprice=document.getElementById("total");
       allprice.innerText=totalprice-discountamount.toFixed(2);
       document.getElementById('input-field').value ="";
-
+      
+     
        }else{
             alert("invalid code.please try again");
       }
 
-      }else{
+    }else{
         alert('you have to buy another products');
       }
 });
+
+function purchase(){
+
+ 
+  const setaddelement = document.getElementById("remove-element").classList.add("hidden")
+  const hideelement = document.getElementById('remove-element2').classList.add('hidden');
+  const setremoveelement =document.getElementById("congratulations").classList.remove('hidden');
+  const colorchabge =document.getElementById("color").classList.add("bg-orange-400")
+  
+  // console.log('setremoveelement')
+}
